@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" role="application" aria-label="Scientific calculator">
+      <div class="display" role="status" aria-live="polite" id="display">0</div>
+      <div class="keys" role="group" aria-label="Calculator keys">
+        <!-- Memory and mode row -->
+        <button class="key" data-action="mc" aria-label="Memory Clear">MC</button>
+        <button class="key" data-action="mr" aria-label="Memory Recall">MR</button>
+        <button class="key" data-action="mplus" aria-label="Memory Add">M+</button>
+        <button class="key" data-action="mminus" aria-label="Memory Subtract">M-</button>
+
+        <!-- Scientific row 1 -->
+        <button class="key" data-action="sqrt" aria-label="Square root">√</button>
+        <button class="key" data-action="square" aria-label="Square">x²</button>
+        <button class="key" data-action="inv" aria-label="Inverse">1/x</button>
+        <button class="key" data-action="deg-rad" aria-label="Toggle degrees or radians">DEG</button>
+
+        <!-- Scientific row 2 -->
+        <button class="key" data-action="sin" aria-label="Sine">sin</button>
+        <button class="key" data-action="cos" aria-label="Cosine">cos</button>
+        <button class="key" data-action="tan" aria-label="Tangent">tan</button>
+        <button class="key" data-action="pi" aria-label="Pi">π</button>
+
+        <!-- Scientific row 3 -->
+        <button class="key" data-action="ln" aria-label="Natural log">ln</button>
+        <button class="key" data-action="log10" aria-label="Log base 10">log</button>
+        <button class="key" data-action="exp" aria-label="Euler's number">e</button>
+        <button class="key op" data-action="divide" aria-label="Divide">÷</button>
+        <button class="key" data-action="clear" aria-label="Clear">C</button>
+        <button class="key" data-action="sign" aria-label="Toggle sign">±</button>
+        <button class="key" data-action="percent" aria-label="Percent">%</button>
+
+        <button class="key" data-digit="7">7</button>
+        <button class="key" data-digit="8">8</button>
+        <button class="key" data-digit="9">9</button>
+        <button class="key op" data-action="multiply" aria-label="Multiply">×</button>
+
+        <button class="key" data-digit="4">4</button>
+        <button class="key" data-digit="5">5</button>
+        <button class="key" data-digit="6">6</button>
+        <button class="key op" data-action="subtract" aria-label="Subtract">−</button>
+
+        <button class="key" data-digit="1">1</button>
+        <button class="key" data-digit="2">2</button>
+        <button class="key" data-digit="3">3</button>
+        <button class="key op" data-action="add" aria-label="Add">+</button>
+
+        <button class="key zero" data-digit="0">0</button>
+        <button class="key" data-action="dot" aria-label="Decimal point">.</button>
+        <button class="key eq" data-action="equals" aria-label="Equals">=</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
